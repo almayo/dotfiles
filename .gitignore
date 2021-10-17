@@ -1,0 +1,18 @@
+### all ignore ###
+/*
+/.**
+
+
+### not ignore ###
+!/.bin/
+!/.bin/**
+!/.tmux.conf
+!/.vimrc
+!/.bashrc
+!/.bash_profile
+!/.tmux.conf
+!/.Xmodmap
+!/.config/
+!/.config/**
+
+!/.gitignore

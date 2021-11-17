@@ -32,6 +32,7 @@ shopt -s no_empty_cmd_completion
 #-----------------------------------------------------
 # User specific aliases and functions
 #-----------------------------------------------------
+alias 'ls'='ls --color=auto'
 alias 'rm'='rm -i'
 alias 'cp'='cp -i'
 alias 'mv'='mv -i'

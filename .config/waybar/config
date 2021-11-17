@@ -111,11 +111,7 @@
         }
     },
     "memory": {
-        "format": "<span foreground='#928374'></span> {}%",
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
+        "format": "<span foreground='#928374'></span> {used:0.1f}Gi/{total:0.1f}Gi"
     },
     "backlight": {
         "format": "<span foreground='#928374'>{icon}</span> {percent}%",

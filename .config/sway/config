@@ -248,3 +248,5 @@ bar {
 
 # start backgroud servies
 exec fcitx -d
+exec imwheel -b 45 -k
+exec mako

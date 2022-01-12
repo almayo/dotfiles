@@ -9,6 +9,8 @@
 !/.tmux.conf
 !/.vimrc
 !/.bashrc
+!/.bashrc.d/
+!/.bashrc.d/**
 !/.bash_profile
 !/.tmux.conf
 !/.Xmodmap

@@ -8,7 +8,12 @@ fi
 # User specific environment and startup programs
 PS1="\[\e[0;36m\][\u@\h \[\e[m\]\w\[\e[0;36m\]]\[\e[m\]\n\\$ "
 
+# tbsm start
+(type tbsm >/dev/null 2>&1) &&
+    [[ $XDG_VTNR -le 2 ]] &&
+    tbsm
+
 # tmux start
-(type tmux >/dev/null 2>&1) && \
-    [[ $TERM != "screen-256color" ]] && \
+(type tmux >/dev/null 2>&1) &&
+    [[ $TERM != "screen-256color" ]] &&
     [[ -z $TMUX ]] && tmux -2 -S "${XDG_RUNTIME_DIR}"/tmux.socket new-session -A -s main

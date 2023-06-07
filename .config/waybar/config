@@ -7,31 +7,25 @@
     ],
     "modules-right": [
         "custom/progress",
-        "custom/usbguard",
         "custom/eyes",
-        "custom/yubikey",
         "custom/decrypted",
         "custom/systemd",
         "custom/seafile",
         "custom/updates",
-        "custom/mail",
-        "custom/recording",
-        "custom/dnd",
         "pulseaudio",
         "network",
-        "custom/vpn",
         "cpu",
         "memory",
         "custom/movie",
         "backlight",
         "sway/language",
-        "battery",
         "clock",
+        "battery",
         "tray"
     ],
 
     "custom/progress": {
-        "exec": "waybar-progress",
+        "exec": "$HOME/.bin/waybar-progress",
         "return-type": "json",
         "interval": 1
     },
@@ -55,7 +49,7 @@
         "return-type": "json"
     },
     "custom/systemd": {
-        "exec": "waybar-systemd",
+        "exec": "$HOME/.bin/waybar-systemd",
         "return-type": "json",
         "interval": 10
     },
@@ -132,7 +126,16 @@
         "format-charging": "<span foreground='#928374'></span> {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
-    "network": {
+    "network1": {
+        "interval": 2,
+        "interface": "eno1",
+        "format-wifi": "<span foreground='#928374'></span> {essid}",
+        "format-ethernet": "<span foreground='#928374'></span> {ifname}",
+        "format-linked": "<span foreground='#928374'></span> {ifname}",
+        "format-disconnected": " <span foreground='#928374'></span> ",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}\n {bandwidthDownBits}\n {bandwidthUpBits}"
+    },
+    "network2": {
         "interval": 2,
         "interface": "enp2s0",
         "format-wifi": "<span foreground='#928374'></span> {essid}",

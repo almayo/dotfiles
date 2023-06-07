@@ -10,15 +10,15 @@ height=600
 width=600
 margin=20
 padding=8
-default-timeout=20000
+default-timeout=6000
 
 [urgency=low]
 background-color=#353535
-default-timeout=10000
+default-timeout=3000
 
 [urgency=high]
 background-color=#4a3533
-default-timeout=0
+default-timeout=10000
 
 [grouped]
 format=(%g) <b>%s</b>\n\n\n%b

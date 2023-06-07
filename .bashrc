@@ -21,7 +21,7 @@ fi
 export HISTIGNORE='?:??:???:exit'
 export HISTSIZE=100000
 export LESS="-FRSMKi"
-[[ -z $TMUX ]] && export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+[[ -z $TMUX ]] && export PATH="$HOME/.local/bin:$HOME/bin:$PATH:$HOME/go/bin"
 
 #-----------------------------------------------------
 # shell options 
@@ -38,6 +38,7 @@ alias 'cp'='cp -i'
 alias 'mv'='mv -i'
 alias 'll'='ls -l'
 alias 'la'='ls -la'
+alias 'lock'='swaylock -f'
 function graphawk() {
     awk 'BEGIN {
             split("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec", month_name);
